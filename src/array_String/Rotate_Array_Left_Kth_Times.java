@@ -4,7 +4,7 @@ public class Rotate_Array_Left_Kth_Times {
 	public static void main(String[] args) {
 		int[] nums = {9, 8, 7, 6, 4, 2, 1, 3}; int k = 3;
 		//{6, 4, 2, 1, 3, 9, 8, 7}
-		rotateArr(nums, k);
+		rotateArrO(nums, k);
 		//print
 		for(int i = 0; i < nums.length; i++) {
 			System.out.print(nums[i] +" ");
@@ -31,4 +31,29 @@ public class Rotate_Array_Left_Kth_Times {
 			j++;
 		}
 	}
+	public static void rotateArrO(int[] nums, int k) {
+		/*Optimal solution with out taking any extra
+		space within same array by using Reverse Algo*/
+		int n = nums.length;
+		 k = k%n;
+		//1st reverse kth ele of array ie;{9,8,7} -> {7,8,9}
+		//2nd reverse rest of the ele in array, ie;{6,4,2,1,3} --> {3,1,2,4,6}
+		//3rd now reverse the complete array, ie; {7,8,9,6,4,2,1,3} --> {3,1,2,4,6,9,8,7}
+		
+		reverse(nums, 0,k-1);
+		reverse(nums, k, n-1);
+		reverse(nums, 0, n-1);
+		
+	}
+	public static void reverse(int[] nums, int start,int end) {
+		while(start < end) {
+			//swap
+			int temp = nums[start];
+			nums[start] = nums[end];
+			nums[end] = temp;
+			start++;
+			end--;
+		}
+	}
+
 }
