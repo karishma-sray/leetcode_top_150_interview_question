@@ -34,6 +34,7 @@ public class Rotate_Array_Left_Kth_Times {
 	public static void rotateArrO(int[] nums, int k) {
 		/*Optimal solution with out taking any extra
 		space within same array by using Reverse Algo*/
+		//tc --> O(N), sc--> O(N) as using the array but no extra space 
 		int n = nums.length;
 		 k = k%n;
 		//1st reverse kth ele of array ie;{9,8,7} -> {7,8,9}
