@@ -26,3 +26,16 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description
 5> 169. Majority Element
 
 https://leetcode.com/problems/majority-element/?envType=study-plan-v2&envId=top-interview-150
+
+
+6> 189.Rotate Array
+
+https://leetcode.com/problems/rotate-array/
+
+7> 283. Move Zeroes
+
+https://leetcode.com/problems/move-zeroes/
+
+8> 75. Sort_Of_Colors_Dutch_Flag
+
+https://leetcode.com/problems/sort-colors/submissions/1257457797/
