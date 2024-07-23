@@ -7,6 +7,7 @@ public class Finf_length_of_last_word_in_given_string {
 		String str = "hi hello holly molly peanut";
 		Finf_length_of_last_word_in_given_string fls = new Finf_length_of_last_word_in_given_string();
 		int lastWordCount = fls.lastWordCount(str);
+		fls.lastWordCount2(str);
 		System.out.println(lastWordCount);
 
 	}
@@ -34,4 +35,21 @@ public class Finf_length_of_last_word_in_given_string {
 		
 		return count;
 	}
-}
+
+	public void lastWordCount2(String str) {
+		int count = 0, n = str.length();
+		for (int i = n - 1; i >= 0; i--) {
+			if (str.charAt(i) != ' ') {
+				count++;
+			} else {
+				if (count > 0) {
+					System.out.println(count);
+					break;
+				}
+			}
+		}
+
+	}
+	}
+
+
