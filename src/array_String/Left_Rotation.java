@@ -12,6 +12,7 @@ public class Left_Rotation {
 
 	}
 	public static void leftRotate(int[] nums) {
+		
 		int n = nums.length;
 		//store the 1st element in temporary var
 		int temp = nums[0];
