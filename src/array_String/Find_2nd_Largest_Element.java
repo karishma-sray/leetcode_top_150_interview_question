@@ -24,6 +24,7 @@ public class Find_2nd_Largest_Element {
 	}
 
 	public static int findSecondMaxElement(int[] arr) {
+		//find both max & 2nd max elements
 		int n = arr.length;
 		int max = Integer.MIN_VALUE;
 		int secondMax = Integer.MIN_VALUE;
