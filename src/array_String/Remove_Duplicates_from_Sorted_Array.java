@@ -56,7 +56,7 @@ public class Remove_Duplicates_from_Sorted_Array {
 				}
 	}
 	 public static int removeDuplicates(int[] nums) {
-		
+		//otherway
 	       int j = 0;
 	       
 	    	   for(int i = 1; i<nums.length; i++) {
