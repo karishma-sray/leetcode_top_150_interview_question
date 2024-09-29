@@ -13,7 +13,7 @@ public class Remove_Duplicate_Number {
 	}
 
 	public static int removeDuplicate(int num) {
-		//convert integer to string
+		//convert integer to string by using valueOf()
 		String snum = String.valueOf(num);
 		StringBuffer sb = new StringBuffer();
 		char[] cnum = snum.toCharArray();
