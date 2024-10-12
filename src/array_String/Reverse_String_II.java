@@ -23,6 +23,8 @@ public class Reverse_String_II {
 				char temp = arr[start];
 				arr[start] = arr[end];
 				arr[end] = temp;
+				start++;
+				end--;
 			}
 		}
 		return new String(arr);
