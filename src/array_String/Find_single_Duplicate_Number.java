@@ -75,15 +75,15 @@ public class Find_single_Duplicate_Number {
 		int fast = arr[0];
 		
 		do {
-			slow = arr[slow];
-			fast = arr[arr[fast]];
+			slow = arr[slow];//slow takes 1step at time
+			fast = arr[arr[fast]];//fast takes 2steps at a time
 		}
 		while(slow != fast);
 		
-		slow = arr[0];
+		slow = arr[0];//reset slow
 		while(slow != fast) {
-			slow = arr[slow];
-			fast = arr[fast];
+			slow = arr[slow];//slow takes 1 step
+			fast = arr[fast];//fast takes 1 step
 		}
 		 
 		System.out.println("finddupsBest : "+slow);
